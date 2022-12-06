@@ -36,14 +36,14 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test brute force motif not present 
       shell: bash
-      run: python3 run_search.py -f ~/gb1.pdb -m SER-HIS-ASP -d 4.0-3.2-5.9
+      run: python3 run_search.py -f test_data/gb1.pdb -m SER-HIS-ASP -d 4.0-3.2-5.9
     - name: Test brute force motif present 
       shell: bash
-      run: python3 run_search.py -f ~/gb1.pdb -m VAL-LEU-LEU -d 8.6-6.8-4.2
+      run: python3 run_search.py -f test_data/gb1.pdb -m VAL-LEU-LEU -d 8.6-6.8-4.2
     - name: Test triangle motif not present 
       shell: bash
-      run: python3 run_search.py -f ~/gb1.pdb -m SER-HIS-ASP -d 4.0-3.2-5.9 -a
+      run: python3 run_search.py -f test_data/gb1.pdb -m SER-HIS-ASP -d 4.0-3.2-5.9 -a
     - name: Test triangle motif present 
       shell: bash
-      run: python3 run_search.py -f ~/gb1.pdb -m VAL-LEU-LEU -d 8.6-6.8-4.2 -a
+      run: python3 run_search.py -f test_data/gb1.pdb -m VAL-LEU-LEU -d 8.6-6.8-4.2 -a
       
