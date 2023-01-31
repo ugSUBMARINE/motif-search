@@ -1,4 +1,5 @@
 ![TEST](https://github.com/ugSUBMARINE/motif-search/actions/workflows/test.yml/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 This repository contains a program to find a motif (eg active site constellation) of interest in a protein structure.
 In order to find the motif, pseudoatom positions for each residues side chain are created. These represent the mean position of the catalytically important atoms of a side chain.
