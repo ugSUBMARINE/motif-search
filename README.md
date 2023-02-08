@@ -13,10 +13,17 @@ The input needs to be a pdb file of the protein.
 *optional:*
 *  [Anaconda or Miniconda](https://docs.anaconda.com/anaconda/install/index.html)
 
+In order to install the required packages run:
+```
+python3 -m venv /PATH/TO/YOUR/VENV
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 In order to see all parameters run:
 
 `python3 run_search.py -h`
 
-Example usage:
+Example usage for a catalytic triad where the distance is 4.0A between SER-HIS, 3.2A between SER-ASP and 5.9A between HIS-ASP:
 
 `python3 run_search.py -f /PATH/TO/PDB/FILE -m SER-HIS-ASP -d 4.0-3.2-5.9` 
